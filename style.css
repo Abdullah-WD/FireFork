@@ -231,3 +231,221 @@ p{
 .cart-modal{
     color: #e78f38;
 }
+
+
+/* ===========================
+   Responsive Design - Mobile
+   =========================== */
+@media (max-width: 768px) {
+
+    nav {
+        width: 100%;
+        padding: 20px 15px; /* 👈 padding badha di */
+        justify-content: space-between;
+        position: relative;
+    }
+
+    /* Logo top left */
+    .logo {
+        font-size: 28px; /* 👈 size badha diya */
+        position: absolute;
+        top: 20px;       /* 👈 niche laya */
+        left: 20px;
+        transform: none !important;
+        font-weight: 700;
+    }
+
+    /* Login button top right */
+    nav button {
+        position: absolute;
+        top: 18px;          /* 👈 niche laya */
+        right: 20px;
+        padding: 10px 22px; /* 👈 button bada */
+        font-size: 15px;    /* 👈 text bada */
+        border-radius: 25px;
+        background: #e78f38;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    /* Navigation bar fixed at bottom */
+    nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #e78f38;
+        display: flex;
+        justify-content: space-around;
+        border-top: 2px solid #fff;
+        padding: 14px 0;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+        color: #fff;
+    }
+
+    /* Hero section adjustments for small screens */
+    .hero {
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    .content {
+        position: static;
+        text-align: center;
+        padding: 150px 20px 80px; /* 👈 top padding thoda zyada because logo niche aya */
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .content button {
+        margin-top: 25px;
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .content button.know_more {
+        margin-left: 10px;
+    }
+
+    /* ===========================
+       About / Reviews / Contact / Know More Pages
+       =========================== */
+    .about,
+    .reviews-section,
+    .contact,
+    .taglines {
+        position: static;
+        text-align: center;
+        width: 90%;
+        margin: 70px auto 80px;
+        padding: 0 10px;
+    }
+
+    .about h2,
+    .reviews-section h2,
+    .contact h2,
+    .taglines h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .about p,
+    .reviews-section p,
+    .contact p,
+    .taglines p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+
+/* ===========================
+   Login Page Responsive Fix
+   =========================== */
+.login-box {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    margin: 80px auto 60px; /* top space for logo/login & bottom nav */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-header header {
+    font-size: 24px;
+}
+
+.input-box .input-field {
+    height: 50px;
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.forgot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    height: 50px;
+    font-size: 15px;
+}
+
+.sign-up-link {
+    font-size: 14px;
+}
+
+/* ===========================
+   Order Now Page Responsive Fix
+   =========================== */
+.order-section {
+    position: static;
+    width: 90%;
+    margin: 80px auto 80px;
+    text-align: center;
+    padding: 15px;
+}
+
+.order-section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.order-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.order-form button {
+    background: #e78f38;
+    color: #fff;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.order-form button:hover {
+    background: #000;
+    transform: scale(1.03);
+}
